@@ -1,0 +1,195 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Festejando a Conexão entre o Campo e a Cidade</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #f0f4f8;
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    header {
+      background: #164d2d;
+      padding: 3rem 2rem 2rem 2rem;
+      text-align: center;
+      color: #e2f0d9;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+      border-bottom-left-radius: 1.5rem;
+      border-bottom-right-radius: 1.5rem;
+    }
+    header h1 {
+      font-weight: 700;
+      font-size: 3rem;
+      letter-spacing: 2px;
+      margin-bottom: 0.6rem;
+      text-transform: uppercase;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    }
+    header p {
+      font-weight: 400;
+      font-size: 1.25rem;
+      font-style: italic;
+      color: #b7d1aa;
+      letter-spacing: 0.5px;
+    }
+
+    main {
+      flex: 1;
+      max-width: 1200px;
+      margin: 3rem auto 4rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 3.5rem;
+      padding: 0 2rem;
+    }
+    section {
+      background: white;
+      border-radius: 1rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 2rem;
+      transition: box-shadow 0.3s ease;
+    }
+    section:hover {
+      box-shadow: 0 15px 35px rgba(0,0,0,0.16);
+    }
+    section img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-top-left-radius: 1rem;
+      border-top-right-radius: 1rem;
+      transition: transform 0.4s ease;
+      cursor: pointer;
+    }
+    section img:hover {
+      transform: scale(1.05);
+    }
+    section h2 {
+      margin-top: 1.3rem;
+      font-size: 1.8rem;
+      color: #164d2d;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.1px;
+    }
+    section p {
+      margin-top: 1rem;
+      font-size: 1.1rem;
+      color: #555d44;
+      max-width: 320px;
+      text-align: center;
+      line-height: 1.55;
+      padding: 0 1rem;
+    }
+
+    .celebration {
+      background: white;
+      max-width: 700px;
+      margin: 0 auto 4rem auto;
+      border-radius: 1rem;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+      padding: 2.8rem 3rem;
+      text-align: center;
+      position: relative;
+    }
+    .celebration h2 {
+      font-size: 2.25rem;
+      margin-bottom: 1rem;
+      color: #1b381d;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.3px;
+    }
+    .celebration p {
+      font-size: 1.2rem;
+      color: #3c5a27;
+      max-width: 600px;
+      margin: 0 auto 2rem auto;
+      line-height: 1.6;
+      font-weight: 400;
+    }
+    .btn-celebrate {
+      background: #3c5a27;
+      color: #fff;
+      font-weight: 700;
+      font-size: 1.25rem;
+      padding: 0.9rem 3rem;
+      border: none;
+      border-radius: 3rem;
+      cursor: pointer;
+      box-shadow: 0 6px 15px rgba(60, 90, 39, 0.6);
+      transition: background 0.35s ease, box-shadow 0.35s ease;
+      user-select: none;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn-celebrate:hover {
+      background: #2a3e1b;
+      box-shadow: 0 8px 22px rgba(42, 62, 27, 0.8);
+    }
+
+    footer {
+      background: #164d2d;
+      color: #b7d1aa;
+      padding: 1.5rem 2rem;
+      text-align: center;
+      font-size: 0.95rem;
+      letter-spacing: 0.6px;
+      user-select: none;
+      border-top-left-radius: 1.5rem;
+      border-top-right-radius: 1.5rem;
+      box-shadow: inset 0 1px 3px rgba(255,255,255,0.1);
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Festejando a Conexão</h1>
+    <p>Entre o Campo e a Cidade, celebrando harmonia, cultura e crescimento sustentável</p>
+  </header>
+
+  <main>
+    <section aria-label="Imagem e descrição do campo">
+      <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=870&q=80" alt="Campo com árvores e gramado verde sob céu azul" loading="lazy" />
+      <h2>Essência do Campo</h2>
+      <p>Fonte de vida, natureza preservada, alimentos frescos e a conexão profunda com a terra que nos nutre.</p>
+    </section>
+    <section aria-label="Imagem e descrição da cidade">
+      <img src="https://images.unsplash.com/photo-1468071174046-657d9d351a40?ixlib=rb-4.0.3&auto=format&fit=crop&w=870&q=80" alt="Vista noturna da cidade iluminada com prédios altos" loading="lazy" />
+      <h2>Vibração Urbana</h2>
+      <p>Inovação, cultura vibrante e redes que impulsionam sonhos e conectam pessoas de todo lugar.</p>
+    </section>
+  </main>
+
+  <section class="celebration" aria-label="Seção de celebração e botão interativo">
+    <h2>Celebrando a Conexão</h2>
+    <p>A verdadeira riqueza está na união entre o campo e a cidade: sustentabilidade, colaboração e respeito para construir um futuro próspero para todos.</p>
+    <a href="celebracao-explicacao.html" class="btn-celebrate" aria-label="Ir para página de explicação do tema">Clique para Celebrar 🎉</a>
+  </section>
+
+  <footer>
+    &copy; 2024 Festejando a Conexão - Todos os direitos reservados.
+  </footer>
+</body>
+</html>
+
+```
